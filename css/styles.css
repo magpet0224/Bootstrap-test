@@ -1,0 +1,14 @@
+.footer{
+  background-color: #EAECEF;
+  padding: 40px 0 0 0;
+}
+
+.row-content{
+  border-bottom: 1px ridge;
+  min-height: 300px;
+  align-items: center;
+}
+
+.row-footer{
+
+}
