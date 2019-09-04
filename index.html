@@ -45,11 +45,14 @@
                 <div class="col-sm d-none d-md-block align-self-right">
                   <img src="img/logo.png" alt="Brand Logo">
                 </div>
+                <div class="col-12 col-md-3 align-self-center">
+                  <a href="index.html#reservetable"><button type="button" name="button" class="btn btn-info">Reserve table</button></a>
+              </div>
             </div>
           </div>
     </header>
 
-<!-- Page content -->
+<!-- Text content part 1 -->
     <div class="container">
         <div class="row row-content">
           <div class="media">
@@ -64,12 +67,11 @@
                   </div>
               </div>
         </div>
-
-
+<!-- Text content part 2 -->
         <div class="row row-content">
           <div class="media">
                   <img class="d-flex mr-3 align-self-center"
-                          src="img/alberto.png" alt="Alberto Somayya">
+                          src="img/alberto.png" alt="Picture of alberto Somayya">
                   <div class="media-body">
                       <h2 class="mt-0">Alberto Somayya</h2>
                       <h4>Executive Chef</h4>
@@ -80,15 +82,55 @@
                           </p>
                   </div>
               </div>
-
+            </div>
+<!-- Text content part 3 -->
         <div class="row row-content">
-            <div class="col-12 col-sm-4 d-none d-sm-block">
-                <h3>Meet our Culinary Specialists</h3>
+          <div class="media">
+            <div class="media-body">
+              <h3>Meet our Culinary Specialists</h3>
+              Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
             </div>
-            <div class="col-12 col-sm">
-                <h2>Alberto Somayya</h2>
-                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+            <img class="align-self-center" src="img/alberto.png" alt="Picture of alberto Somayya">
+          </div>
+        </div>
+<!-- Reserve a table card - Number of guests radio buttons -->
+        <div class="row row-content justify-content-center" id="reservetable">
+          <div class="col-12 col-md-8 align-self-center">
+            <div class="card">
+              <h2 class="card-header bg-info text-white">Reserve a table</h2>
+              <div class="card-body">
+                <form>
+                  <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="guests">Guests</label>
+                      <div class="col-12 col-sm-8">
+                        <input class="" type="radio" name="guests" value="1"> 1
+                        <input class="ml-3" type="radio" name="guests" value="2"> 2
+                        <input class="ml-3" type="radio" name="guests" value="3"> 3
+                        <input class="ml-3" type="radio" name="guests" value="4"> 4
+                        <input class="ml-3" type="radio" name="guests" value="5"> 5
+                        <input class="ml-3" type="radio" name="guests" value="6"> 6
+                      </div>
+                    </div>
+<!-- Reserve a table card - Date and Time fields -->
+                    <div class="form-group row">
+                      <label class="col-12 col-sm-4 col-form-label" for="date">Date and time</label>
+                      <div class="col-6 col-sm-4">
+                        <input class="form-control" type="date" id="date" name="date" placeholder="Specify date"></input>
+                      </div>
+                      <div class="col-6 col-sm-4">
+                        <input class="form-control" type="time" id="time" name="time" placeholder="Specify time"></input>
+                      </div>
+                      </div>
+                      <div class="row">
+                        <div class="offset-md-4 col-sm-8">
+                          <button type="submit" name="button" class="btn btn-info">Reserve table</button>
+                      </div>
+                      </div>
+                </form>
+<!--  -->
+              </div>
             </div>
+          </div>
         </div>
     </div>
 
