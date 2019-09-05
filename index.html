@@ -34,6 +34,36 @@
   </div>
 </nav>
 
+<!-- Modal for reserving a table -->
+<div class="modal fade" id=reservemodal tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="content">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Reserve a Table</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group row">
+              <label class="col-4 col-form-label" for="firstname">Name</label>
+              <div class="col-8">
+                <input class="form-control" type="text" id="firstname" name="firstname" placeholder="Enter your name"></input>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-4 col-form-label" for="guests">Number of Guests</label>
+              <div class="col-8">
+                <input class="form-control" type="text" id="guests" name="guests" placeholder="How many hungry people are there?"></input>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" name="Submit">Reserve</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Jumbotron -->
     <header class="jumbotron">
           <div class="container">
@@ -46,7 +76,8 @@
                   <img src="img/logo.png" alt="Brand Logo">
                 </div>
                 <div class="col-12 col-md-3 align-self-center">
-                  <a href="index.html#reservetable"><button type="button" name="button" class="btn btn-info">Reserve table</button></a>
+                  <button type="button" name="button" class="btn btn-info"
+                  data-toggle="modal" data-target="#reservemodal">Reserve a table</button>
               </div>
             </div>
           </div>
@@ -71,7 +102,8 @@
         <div class="row row-content">
           <div class="media">
                   <img class="d-flex mr-3 align-self-center"
-                          src="img/alberto.png" alt="Picture of alberto Somayya">
+                        src="img/alberto.png" alt="Picture of alberto Somayya"
+                        data-toggle="tooltip" data-html="true" title="Yes, very good..." data-placement="top">
                   <div class="media-body">
                       <h2 class="mt-0">Alberto Somayya</h2>
                       <h4>Executive Chef</h4>
@@ -90,7 +122,8 @@
               <h3>Meet our Culinary Specialists</h3>
               Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
             </div>
-            <img class="align-self-center" src="img/alberto.png" alt="Picture of alberto Somayya">
+            <img class="align-self-center" src="img/alberto.png" alt="Picture of alberto Somayya"
+            data-toggle="tooltip" data-html="true" title="Ok, easy now..." data-placement="top">
           </div>
         </div>
 <!-- Reserve a table card - Number of guests radio buttons -->
@@ -173,6 +206,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 </body>
 
 </html>
